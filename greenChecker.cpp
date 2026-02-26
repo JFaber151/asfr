@@ -55,15 +55,13 @@ class MinimalSubscriber : public rclcpp::Node
       }else{
         RCLCPP_INFO(this->get_logger(), "not green :(");
       }
-      //RCLCPP_INFO(this->get_logger(), "BGR at (0,0): %d %d %d", msg.data[0], msg.data[1], msg.data[2]);
-      //calculate the CoM
-      //publish_green_info(brightness);
+      publish_green_info(CoM_x, CoM_y);
     }
     void publish_green_info(uint CoM_x, uint CoM_y){
       auto message = std_msgs::msg::String();
-      message.data = std::string("The green is at: ") + std::to_string(CoM_x) + "," + std::to_string(CoM_y);
+      message.data = std::to_string(CoM_x) + "," + std::to_string(CoM_y);
       publisher_->publish(message);
-      RCLCPP_INFO(this->get_logger(), "%s", message.data.c_str());
+      //RCLCPP_INFO(this->get_logger(), "%s", message.data.c_str());
     }
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscription_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
