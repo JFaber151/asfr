@@ -11,15 +11,12 @@
 #include <unistd.h>
 #include <string.h>
 #include <math.h>
+#include <pthread.h>
 using namespace std;
 
 #define SIG SIGRTMIN
 
 static volatile sig_atomic_t counter = 0;
-
-void thread_func(){ 
-  cout << "Hello threaded World!";
-}
 
 void timer_handler(int sig)
 {
@@ -67,7 +64,7 @@ void make_timer()
 
 
   //This is the main loop and it's setup
-  int number_of_samples = 10;
+  int number_of_samples = 1000;
   double samples[number_of_samples];
   struct timespec ts_new, ts_old;
   clock_gettime(CLOCK_MONOTONIC, &ts_new);
@@ -105,6 +102,10 @@ void make_timer()
   printf("min val is %lf. max val is %lf\n", min_val, max_val);
 }
 
+void *thread_func(void *arg){
+  make_timer();
+  return NULL;
+}
 
 void find_jitter()
 {
@@ -114,9 +115,10 @@ void find_jitter()
   sigaddset(&set, SIGALRM);
   pthread_sigmask(SIG_BLOCK, &set, NULL);
 
-  // The actual thread
-  thread t(make_timer);
-  t.join();
+  //We set up the thread that will run the jitter test
+  pthread_t pthread;
+  pthread_create(&pthread, NULL, thread_func, NULL);
+  pthread_join(pthread,NULL);
 }
 
 int main(){
