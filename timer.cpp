@@ -70,15 +70,17 @@ void make_timer()
   clock_gettime(CLOCK_MONOTONIC, &ts_new);
   double newTime = (double)ts_new.tv_sec + (double)ts_new.tv_nsec / 1e9;
   double oldTime;
+  //int efd = evl_attach_self("my RT worker thread");
   while (counter < number_of_samples){
     oldTime = newTime;
     sleep(-1); // Sleep is automatically woken up by a signal, so we just wait for the signal from the timer
-    clock_gettime(CLOCK_MONOTONIC, &ts_new);
+    clock_gettime(CLOCK_MONOTONIC, &ts_new); //This needs to be replaced for an evl function, so I assume the structs change too
     newTime = (double)ts_new.tv_sec + (double)ts_new.tv_nsec / 1e9;
     double dif = newTime - oldTime;
     samples[counter] = dif;
     counter++;
     }
+  //evl_detach_self();  
 
   //Do some post processing on the data we got
   double sum = 0, min_val = samples[0], max_val = samples[0];
