@@ -14,7 +14,10 @@
 #include <pthread.h>
 #include <evl/thread.h>
 #include <evl/sched.h>
+#include <evl/evl.h>
 #include <sched.h> //Not sure if this one is required, but better safe than sorry
+#include <fstream>
+
 using namespace std;
 
 #define SIG SIGRTMIN
@@ -74,6 +77,11 @@ void make_timer()
   double newTime = (double)ts_new.tv_sec + (double)ts_new.tv_nsec / 1e9;
   double oldTime;
   int efd = evl_attach_self("my RT worker thread");
+
+  //check if in band
+  bool is_inband = evl_is_inband();
+  evl_printf("is in band? %d\n", is_inband);
+
   while (counter < number_of_samples){
     oldTime = newTime;
     sleep(-1); // Sleep is automatically woken up by a signal, so we just wait for the signal from the timer
@@ -95,6 +103,7 @@ void make_timer()
       if(samples[i] > max_val){
         max_val = samples[i];
       }
+    write_to_csv(i, samples[i]*pow(10,9)-interval);
   }
   double mean = sum / number_of_samples;
   printf("mean is %lf\n", mean);
