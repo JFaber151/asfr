@@ -13,7 +13,7 @@ We create an evl timer that goes off every 1ms
 ## Build instruction
 
 ```bash
-g++ actualEVLTimer.cpp -o assignment2.2 $(pkg-config /usr/evl/lib/pkgconfig/evl.pc -cflags -libs)
+g++ actualEVLTimer.cpp -o assignment2.2 $(pkg-config /usr/evl/lib/pkgconfig/evl.pc --cflags --libs)
 ```
 
 ## How to run
