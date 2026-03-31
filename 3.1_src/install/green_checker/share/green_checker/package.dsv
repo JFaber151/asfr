@@ -1,0 +1,5 @@
+source;share/green_checker/local_setup.bash
+source;share/green_checker/local_setup.dsv
+source;share/green_checker/local_setup.ps1
+source;share/green_checker/local_setup.sh
+source;share/green_checker/local_setup.zsh

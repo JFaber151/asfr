@@ -1,0 +1,4 @@
+source;share/brightness_adjuster/local_setup.bash
+source;share/brightness_adjuster/local_setup.dsv
+source;share/brightness_adjuster/local_setup.sh
+source;share/brightness_adjuster/local_setup.zsh

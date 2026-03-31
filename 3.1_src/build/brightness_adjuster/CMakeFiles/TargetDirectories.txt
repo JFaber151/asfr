@@ -1,0 +1,10 @@
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/uninstall.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/brightness_adjuster_uninstall.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/brightness_node.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/test.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/edit_cache.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/rebuild_cache.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/list_install_components.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/install.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/install/local.dir
+/home/asdfr-27/ros2_ws/src/build/brightness_adjuster/CMakeFiles/install/strip.dir

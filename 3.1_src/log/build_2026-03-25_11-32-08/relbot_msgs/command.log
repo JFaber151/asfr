@@ -1,0 +1,1 @@
+Invoking command in '/home/asdfr-27/ros2_ws/src/build/relbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/relbot_msgs -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/relbot_msgs

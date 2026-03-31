@@ -1,0 +1,4 @@
+Invoking command in '/home/asdfr-27/ros2_ws/src/build/green_checker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/green_checker -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/green_checker
+Invoked command in '/home/asdfr-27/ros2_ws/src/build/green_checker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/green_checker -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/green_checker
+Invoking command in '/home/asdfr-27/ros2_ws/src/build/green_checker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/green_checker -- -j3 -l3
+Invoked command in '/home/asdfr-27/ros2_ws/src/build/green_checker' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/green_checker -- -j3 -l3

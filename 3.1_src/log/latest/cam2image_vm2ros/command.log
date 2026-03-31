@@ -1,0 +1,1 @@
+Invoking command in '/home/asdfr-27/ros2_ws/src/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/cam2image_vm2ros -- -j3 -l3

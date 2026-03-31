@@ -1,0 +1,2 @@
+source;share/brightness_adjuster/environment/ament_prefix_path.sh
+source;share/brightness_adjuster/environment/path.sh

@@ -1,0 +1,6 @@
+[0.063s] Invoking command in '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/brightness_adjuster -- -j3 -l3
+[0.252s] [ 50%] [32mBuilding CXX object CMakeFiles/brightness_node.dir/src/brightness_adjuster.cpp.o[0m
+[3.591s] gmake[2]: *** [CMakeFiles/brightness_node.dir/build.make:76: CMakeFiles/brightness_node.dir/src/brightness_adjuster.cpp.o] Interrupt
+[3.639s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/brightness_node.dir/all] Interrupt
+[3.641s] gmake: *** [Makefile:146: all] Interrupt
+[3.644s] Invoked command in '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/brightness_adjuster -- -j3 -l3

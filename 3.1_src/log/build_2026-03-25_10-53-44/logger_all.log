@@ -1,0 +1,182 @@
+[0.384s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.384s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffbc294ac0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbc445a20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbc445a20>>, mixin_verb=('build',))
+[0.989s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.990s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.990s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.990s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.990s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.991s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.991s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/asdfr-27/ros2_ws/src'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extensions ['ignore', 'ignore_ament_install']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extension 'ignore_ament_install'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extensions ['colcon_pkg']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extension 'colcon_pkg'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extensions ['colcon_meta']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extension 'colcon_meta'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extensions ['ros']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(brightness_adjuster) by extension 'ros'
+[1.048s] DEBUG:colcon.colcon_core.package_identification:Package 'brightness_adjuster' with type 'ros.ament_cmake' and name 'brightness_adjuster'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extensions ['ignore', 'ignore_ament_install']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extension 'ignore'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extension 'ignore_ament_install'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extensions ['colcon_pkg']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extension 'colcon_pkg'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extensions ['colcon_meta']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extension 'colcon_meta'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extensions ['ros']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(cam2image_vm2ros) by extension 'ros'
+[1.055s] DEBUG:colcon.colcon_core.package_identification:Package 'cam2image_vm2ros' with type 'ros.ament_cmake' and name 'cam2image_vm2ros'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extensions ['ignore', 'ignore_ament_install']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extension 'ignore'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extension 'ignore_ament_install'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extensions ['colcon_pkg']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extension 'colcon_pkg'
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extensions ['colcon_meta']
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extension 'colcon_meta'
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extensions ['ros']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(green_checker) by extension 'ros'
+[1.061s] DEBUG:colcon.colcon_core.package_identification:Package 'green_checker' with type 'ros.ament_cmake' and name 'green_checker'
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extensions ['ignore', 'ignore_ament_install']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extension 'ignore'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extension 'ignore_ament_install'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extensions ['colcon_pkg']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extension 'colcon_pkg'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extensions ['colcon_meta']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extension 'colcon_meta'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extensions ['ros']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(relbot_setpoints) by extension 'ros'
+[1.070s] DEBUG:colcon.colcon_core.package_identification:Package 'relbot_setpoints' with type 'ros.ament_cmake' and name 'relbot_setpoints'
+[1.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.191s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/asdfr-27/ros2_ws/install
+[1.196s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[1.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'cmake_args' from command line to 'None'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'cmake_target' from command line to 'None'
+[1.343s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.344s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'cmake_clean_cache' from command line to 'False'
+[1.344s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'cmake_clean_first' from command line to 'False'
+[1.344s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'cmake_force_configure' from command line to 'False'
+[1.344s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'ament_cmake_args' from command line to 'None'
+[1.345s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'catkin_cmake_args' from command line to 'None'
+[1.345s] Level 5:colcon.colcon_core.verb:set package 'brightness_adjuster' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.345s] DEBUG:colcon.colcon_core.verb:Building package 'brightness_adjuster' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asdfr-27/ros2_ws/src/install/brightness_adjuster', 'merge_install': False, 'path': '/home/asdfr-27/ros2_ws/src/brightness_adjuster', 'symlink_install': False, 'test_result_base': None}
+[1.347s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_args' from command line to 'None'
+[1.347s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_target' from command line to 'None'
+[1.347s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.348s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_clean_cache' from command line to 'False'
+[1.348s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_clean_first' from command line to 'False'
+[1.348s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'cmake_force_configure' from command line to 'False'
+[1.348s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'ament_cmake_args' from command line to 'None'
+[1.349s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'catkin_cmake_args' from command line to 'None'
+[1.349s] Level 5:colcon.colcon_core.verb:set package 'cam2image_vm2ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.349s] DEBUG:colcon.colcon_core.verb:Building package 'cam2image_vm2ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asdfr-27/ros2_ws/src/build/cam2image_vm2ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asdfr-27/ros2_ws/src/install/cam2image_vm2ros', 'merge_install': False, 'path': '/home/asdfr-27/ros2_ws/src/cam2image_vm2ros', 'symlink_install': False, 'test_result_base': None}
+[1.351s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'cmake_args' from command line to 'None'
+[1.351s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'cmake_target' from command line to 'None'
+[1.351s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.351s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'cmake_clean_cache' from command line to 'False'
+[1.352s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'cmake_clean_first' from command line to 'False'
+[1.352s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'cmake_force_configure' from command line to 'False'
+[1.352s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'ament_cmake_args' from command line to 'None'
+[1.352s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'catkin_cmake_args' from command line to 'None'
+[1.353s] Level 5:colcon.colcon_core.verb:set package 'green_checker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.353s] DEBUG:colcon.colcon_core.verb:Building package 'green_checker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asdfr-27/ros2_ws/src/build/green_checker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asdfr-27/ros2_ws/src/install/green_checker', 'merge_install': False, 'path': '/home/asdfr-27/ros2_ws/src/green_checker', 'symlink_install': False, 'test_result_base': None}
+[1.354s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'cmake_args' from command line to 'None'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'cmake_target' from command line to 'None'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'cmake_clean_cache' from command line to 'False'
+[1.356s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'cmake_clean_first' from command line to 'False'
+[1.356s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'cmake_force_configure' from command line to 'False'
+[1.356s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'ament_cmake_args' from command line to 'None'
+[1.356s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'catkin_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'relbot_setpoints' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.357s] DEBUG:colcon.colcon_core.verb:Building package 'relbot_setpoints' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asdfr-27/ros2_ws/src/build/relbot_setpoints', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asdfr-27/ros2_ws/src/install/relbot_setpoints', 'merge_install': False, 'path': '/home/asdfr-27/ros2_ws/src/relbot_setpoints', 'symlink_install': False, 'test_result_base': None}
+[1.357s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.360s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.361s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asdfr-27/ros2_ws/src/brightness_adjuster' with build type 'ament_cmake'
+[1.362s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asdfr-27/ros2_ws/src/brightness_adjuster'
+[1.369s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.370s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.370s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.382s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asdfr-27/ros2_ws/src/cam2image_vm2ros' with build type 'ament_cmake'
+[1.383s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asdfr-27/ros2_ws/src/cam2image_vm2ros'
+[1.384s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.385s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.396s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asdfr-27/ros2_ws/src/green_checker' with build type 'ament_cmake'
+[1.397s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asdfr-27/ros2_ws/src/green_checker'
+[1.398s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.398s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/brightness_adjuster -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/brightness_adjuster
+[1.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-27/ros2_ws/src/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/cam2image_vm2ros -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/cam2image_vm2ros
+[1.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-27/ros2_ws/src/build/green_checker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/green_checker -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/green_checker
+[6.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-27/ros2_ws/src/build/cam2image_vm2ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/cam2image_vm2ros -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/cam2image_vm2ros
+[6.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-27/ros2_ws/src/build/cam2image_vm2ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/cam2image_vm2ros -- -j3 -l3
+[6.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/brightness_adjuster -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/brightness_adjuster
+[6.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/brightness_adjuster -- -j3 -l3
+[7.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-27/ros2_ws/src/build/green_checker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/green_checker -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/green_checker
+[7.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asdfr-27/ros2_ws/src/build/green_checker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/green_checker -- -j3 -l3
+[17.419s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[17.419s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[17.534s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(green_checker)
+[17.549s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-27/ros2_ws/src/install/green_checker' for CMake module files
+[17.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asdfr-27/ros2_ws/src/build/green_checker' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/green_checker -- -j3 -l3
+[17.555s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-27/ros2_ws/src/install/green_checker' for CMake config files
+[17.557s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-27/ros2_ws/src/install/green_checker/bin'
+[17.558s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-27/ros2_ws/src/install/green_checker/lib/pkgconfig/green_checker.pc'
+[17.559s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-27/ros2_ws/src/install/green_checker/lib/python3.10/site-packages'
+[17.562s] Level 1:colcon.colcon_core.environment:checking '/home/asdfr-27/ros2_ws/src/install/green_checker/bin'
+[17.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-27/ros2_ws/src/install/green_checker/share/green_checker/package.ps1'
+[17.576s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asdfr-27/ros2_ws/src/install/green_checker/share/green_checker/package.dsv'
+[17.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-27/ros2_ws/src/install/green_checker/share/green_checker/package.sh'
+[17.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-27/ros2_ws/src/install/green_checker/share/green_checker/package.bash'
+[17.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/asdfr-27/ros2_ws/src/install/green_checker/share/green_checker/package.zsh'
+[17.597s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asdfr-27/ros2_ws/src/install/green_checker/share/colcon-core/packages/green_checker)
+[17.613s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[17.613s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[17.614s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[17.615s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[17.638s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[17.639s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[17.640s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[17.640s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[17.643s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[17.646s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.648s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asdfr-27/ros2_ws/src/install/local_setup.ps1'
+[17.653s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asdfr-27/ros2_ws/src/install/_local_setup_util_ps1.py'
+[17.663s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asdfr-27/ros2_ws/src/install/setup.ps1'
+[17.671s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asdfr-27/ros2_ws/src/install/local_setup.sh'
+[17.674s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asdfr-27/ros2_ws/src/install/_local_setup_util_sh.py'
+[17.677s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asdfr-27/ros2_ws/src/install/setup.sh'
+[17.684s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asdfr-27/ros2_ws/src/install/local_setup.bash'
+[17.687s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asdfr-27/ros2_ws/src/install/setup.bash'
+[17.692s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asdfr-27/ros2_ws/src/install/local_setup.zsh'
+[17.695s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asdfr-27/ros2_ws/src/install/setup.zsh'

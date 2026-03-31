@@ -1,0 +1,3 @@
+Invoking command in '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/brightness_adjuster -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/brightness_adjuster
+Invoked command in '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/asdfr-27/ros2_ws/src/brightness_adjuster -DCMAKE_INSTALL_PREFIX=/home/asdfr-27/ros2_ws/src/install/brightness_adjuster
+Invoking command in '/home/asdfr-27/ros2_ws/src/build/brightness_adjuster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/asdfr-27/ros2_ws/src/build/brightness_adjuster -- -j3 -l3
