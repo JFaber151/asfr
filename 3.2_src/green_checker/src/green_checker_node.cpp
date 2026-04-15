@@ -12,6 +12,8 @@
 #include "std_msgs/msg/string.hpp"
 #include "sensor_msgs/msg/image.hpp"
 #include <stdint.h>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/highgui.hpp>
 using std::placeholders::_1;
 
 class MinimalSubscriber : public rclcpp::Node
@@ -31,36 +33,47 @@ class MinimalSubscriber : public rclcpp::Node
   private:
     void find_green_callback(const sensor_msgs::msg::Image & msg)
     {
-      uint totalX = 0, totalY = 0;
-      int found = 0;
-      for(uint i = 0; i <  msg.height; i++){
+      uint64_t totalX = 0, totalY = 0;
+      int found = 0, tolerance = this->get_parameter("tolerance").as_int();
+
+      auto cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
+      cv::Mat &img = cv_ptr->image;
+
+      for(uint i = 0; i < msg.height; i++){
         for(uint j = 0; j < msg.width * 3; j+= 3){
 
-          uint r = msg.data[j + (i * msg.step)];
-          uint g = msg.data[j + (i * msg.step) + 1];
-          uint b = msg.data[j + (i * msg.step) + 2];
-          int tolerance = this->get_parameter("tolerance").as_int();
+          int index = j + (i * msg.step);
+
+          uint b = msg.data[index];
+          uint g = msg.data[index + 1];
+          uint r = msg.data[index + 2];
+
           if(g > r + tolerance && g > b + tolerance){
-            //we found a pixel that falls within tolerance to be counted as green
-            //increment # of green pixels found, so we know our division to get the CoM of green pixels
             found += 1;
-            //add x position to total
             totalX += j/3;
-            //add y position to total
             totalY += i;
-            }
+
+            // Highlight pixel in red
+            img.at<cv::Vec3b>(i, j/3) = cv::Vec3b(0, 0, 255);
+          }else{
+            img.at<cv::Vec3b>(i, j/3) = cv::Vec3b(0, 0, 0);
+          }
         }
       }
+
       uint CoM_x = 0, CoM_y = 0;
       if(found){
-        CoM_x = (int) totalX/found;
-        CoM_y = (int) totalY/found;
-      }
-      if(found){
-         //RCLCPP_INFO(this->get_logger(), "GREEN! found at:(%d, %d)", CoM_x, CoM_y);
-      }else{
+        CoM_x = totalX / found;
+        CoM_y = totalY / found;
+
+        cv::circle(img, cv::Point(CoM_x, CoM_y), 10, cv::Scalar(255, 0, 0), 2);
+      } else {
         RCLCPP_INFO(this->get_logger(), "not green :(");
       }
+
+      cv::imshow("Green Debug View", img);
+      cv::waitKey(1);
+
       publish_green_info(CoM_x, CoM_y);
     }
 

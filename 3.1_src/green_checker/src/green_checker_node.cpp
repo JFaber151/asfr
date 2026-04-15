@@ -31,15 +31,14 @@ class MinimalSubscriber : public rclcpp::Node
   private:
     void find_green_callback(const sensor_msgs::msg::Image & msg)
     {
-      uint totalX = 0, totalY = 0;
-      int found = 0;
+      uint64_t totalX = 0, totalY = 0;
+      int found = 0, tolerance = this->get_parameter("tolerance").as_int();;
       for(uint i = 0; i <  msg.height; i++){
         for(uint j = 0; j < msg.width * 3; j+= 3){
 
           uint r = msg.data[j + (i * msg.step)];
           uint g = msg.data[j + (i * msg.step) + 1];
           uint b = msg.data[j + (i * msg.step) + 2];
-          int tolerance = this->get_parameter("tolerance").as_int();
           if(g > r + tolerance && g > b + tolerance){
             //we found a pixel that falls within tolerance to be counted as green
             //increment # of green pixels found, so we know our division to get the CoM of green pixels
