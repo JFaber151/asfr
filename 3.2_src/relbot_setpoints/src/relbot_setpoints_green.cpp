@@ -49,19 +49,24 @@ class MinimalPublisher : public rclcpp::Node{
           auto message = example_interfaces::msg::Float64();
           message.data = vel;
           publisherRight_->publish(message);
-          message.data = message.data * -1;
+          message.data = message.data;
           publisherLeft_->publish(message);
           RCLCPP_INFO(this->get_logger(), "%f , %f", vel, vel * -1);
+          
+          RCLCPP_INFO(this->get_logger(), "Go straight - distance from center: %f", distance);
           return;
         }
-        vel = vel * (distance * 2);  //normalized such that +/- 0.5 means 'max' speed turn
-        RCLCPP_INFO(this->get_logger(), "%f , %f", vel, vel * -1);
+        vel = vel * (distance * 4);  //normalized such that +/- 0.5 means 'max' speed turn
         
         //We make a turn, 
         auto message = example_interfaces::msg::Float64();
-        message.data = vel * -1; //multiplying by -1 makes us turn left when the green is on the left side of the cam
+        message.data = vel;
         publisherRight_->publish(message);
+        message.data = vel * -1; //multiplying by -1 makes us turn left when the green is on the left side of the cam
         publisherLeft_->publish(message);
+        
+        RCLCPP_INFO(this->get_logger(), "%f , %f", vel, vel * -1);
+        RCLCPP_INFO(this->get_logger(), "Make a turn - distance from center: %f", distance);
         
     }
 

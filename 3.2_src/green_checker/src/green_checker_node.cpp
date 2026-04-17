@@ -71,8 +71,8 @@ class MinimalSubscriber : public rclcpp::Node
         RCLCPP_INFO(this->get_logger(), "not green :(");
       }
 
-      cv::imshow("Green Debug View", img);
-      cv::waitKey(1);
+      //cv::imshow("Green Debug View", img);
+      //cv::waitKey(1);
 
       publish_green_info(CoM_x, CoM_y);
     }

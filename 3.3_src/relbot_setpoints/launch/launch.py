@@ -35,7 +35,7 @@ def generate_launch_description():
         executable="relbot_setpoints_green",
         name="relbot_setpoints", 
         parameters = [
-            {"base_velocity": 25},
+            {"base_velocity": 10},
             {"width": 640} 
         ]       
     )
@@ -43,7 +43,7 @@ def generate_launch_description():
     return LaunchDescription([
         cam,
         adapter_node,
-        relbot_turtle,
+        #relbot_turtle,
         relbot_setpoints,
         green_checker,
     ])
